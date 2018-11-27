@@ -1,5 +1,5 @@
 class WritersController < ApplicationController
-  # before_action :set_writer, only: [:show, :update, :destroy]
+  before_action :set_writer, only: [:show, :update, :destroy]
 
   # GET /writers
   def index
