@@ -4,7 +4,7 @@ class AddDeviseToWriters < ActiveRecord::Migration[5.2]
   def self.up
     change_table :writers do |t|
       ## Database authenticatable
-      t.string :email,              null: false, default: ""
+      # t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable
@@ -37,7 +37,8 @@ class AddDeviseToWriters < ActiveRecord::Migration[5.2]
       # t.timestamps null: false
     end
 
-    add_index :writers, :email,                unique: true
+    # add_index :writers, unique: true
+    #:email,
     add_index :writers, :reset_password_token, unique: true
     # add_index :writers, :confirmation_token,   unique: true
     # add_index :writers, :unlock_token,         unique: true
