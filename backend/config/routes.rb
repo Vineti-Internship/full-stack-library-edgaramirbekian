@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :writers
+  # devise_for :writers
   resources :books
   resources :writers
   resources :sessions, only: [:create, :destroy]
