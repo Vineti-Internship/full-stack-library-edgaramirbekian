@@ -46,6 +46,6 @@ class WritersController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def writer_params
-      params.require(:writer).permit(:first_name, :last_name)
+      params.require(:writer).permit(:first_name, :last_name, :password, :email)
     end
 end
