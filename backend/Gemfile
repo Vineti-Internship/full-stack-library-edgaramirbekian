@@ -52,3 +52,6 @@ gem 'devise'
 
 # Token generation
 gem 'simple_token_authentication', '~> 1.0'
+
+# Connect React
+gem 'rack-cors'
