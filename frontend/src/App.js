@@ -4,8 +4,9 @@ import './App.css';
 import {Header} from './components/header';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {Footer} from './components/footer';
-import { Authors } from './components/authors';
-import { Books } from './components/books';
+// import { Authors } from './components/authors';
+// import { Books } from './components/books';
+// import {SingleAuthorBooks} from './components/single_author_books';
 
 
 
@@ -20,6 +21,7 @@ class App extends Component {
         </div>
 
           <Main />
+          {/* <SingleAuthorBooks /> */}
 
         <div className = 'jumbotron'>
           <Footer />
