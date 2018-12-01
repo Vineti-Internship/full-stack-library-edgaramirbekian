@@ -57,8 +57,8 @@ export class AddWriter extends React.Component {
                     }/>
                 </label>
                 <input type="submit" value="Submit" onClick= {
-                    // this.post_request
-                    console.log(this.state)
+                    this.post_request
+                    // console.log(this.state)
                     }/>
             </form>
         )

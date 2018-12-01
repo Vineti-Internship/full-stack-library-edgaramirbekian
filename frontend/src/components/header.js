@@ -9,6 +9,8 @@ export class Header extends React.PureComponent {
                 <h3>Library Demo</h3>
                 <Link to='/addwriter'>Add Author</Link> <br/>
                 <Link to='/addbook'>Add Book</Link> <br/>
+                <Link to='/delbook'>Delete Book</Link> <br/>
+
 
             </div>
         )
