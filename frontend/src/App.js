@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import './components/header'
-import Header from './components/header';
+import {Header} from './components/header';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Footer from './components/footer';
-import Shop from './components/shop';
+import {Footer} from './components/footer';
+import {Library} from './components/library';
 
 
 class App extends Component {
@@ -15,7 +14,7 @@ class App extends Component {
           <Header />
         </div>
         <div>
-          <Shop />
+          <Library />
         </div>
         <div className = 'jumbotron'>
           <Footer />

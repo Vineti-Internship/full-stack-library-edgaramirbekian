@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Footer extends React.PureComponent {
+export class Footer extends React.PureComponent {
     render() {
         return (
             <div>
@@ -10,4 +10,3 @@ class Footer extends React.PureComponent {
     }
 }
 
-export default Footer
