@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
+import Main from './components/main'
 import './App.css';
 import {Header} from './components/header';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {Footer} from './components/footer';
-import {Library} from './components/library';
+import { Authors } from './components/authors';
+import { Books } from './components/books';
+
+
+
 
 
 class App extends Component {
@@ -13,9 +18,9 @@ class App extends Component {
         <div className = "jumbotron">
           <Header />
         </div>
-        <div>
-          <Library />
-        </div>
+
+          <Main />
+
         <div className = 'jumbotron'>
           <Footer />
         </div>
