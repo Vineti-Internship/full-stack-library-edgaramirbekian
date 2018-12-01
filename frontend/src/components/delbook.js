@@ -23,7 +23,7 @@ export class DelBook extends React.Component {
             <form>
                 <label>
                     Book ID:
-                    <input type="text" name="first_name" value={this.state.book_id} onChange = {this.idhandler}/>
+                    <input type="text" name="book_id" value={this.state.book_id} onChange = {this.idhandler}/>
                 </label>
                 <input type="submit" value="Submit" onClick= {
                     this.delete_book
