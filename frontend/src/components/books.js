@@ -5,7 +5,7 @@ export class Books extends React.Component {
     constructor () {
         super ();
         this.state = {
-            books: [],
+            books: []
         }
     }
 
@@ -34,8 +34,7 @@ export class Books extends React.Component {
                     </li>
                     <button onClick={
                         async () => {
-                        fetch('http://localhost:3000/books/'+value.id, {method: 'DELETE'})
-                        }
+                        fetch('http://localhost:3000/books/'+value.id, {method: 'DELETE'})                        }
                     }>Delete</button>
 				</ul>
 			)
@@ -46,6 +45,7 @@ export class Books extends React.Component {
         return (
             <div>
                 {this.renderBookInfo()}
+
             </div> 
             
         )

@@ -3,16 +3,17 @@ import React from 'react'
 export class AddWriter extends React.Component {
     constructor () {
         super ();
-        
+
+        this.state = {
+            first_name: '',
+            last_name: '',
+            password: '',
+            email: ''
+        }
         this.post_request = this.post_request.bind(this)
 
     }
-    state = {
-        first_name: '',
-        last_name: '',
-        password: '',
-        email: ''
-    }
+    
 
     async post_request () {
         fetch('http://localhost:3000/writers', {

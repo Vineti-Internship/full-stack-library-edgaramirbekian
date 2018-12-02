@@ -7,7 +7,7 @@ export class Authors extends React.Component {
     constructor () {
         super ();
         this.state = {
-            writers: [],
+            writers: []
         }
     }
 
@@ -34,7 +34,7 @@ export class Authors extends React.Component {
                         <button onClick={
                             async () => {
                                 fetch('http://localhost:3000/writers/'+value.id, {method: 'DELETE'})
-                            }
+                               }
                         }>Delete</button>
                     </li>
 				</ul>

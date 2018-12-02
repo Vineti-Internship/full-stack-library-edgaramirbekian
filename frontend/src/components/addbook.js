@@ -1,21 +1,21 @@
 import React from 'react'
-
 export class AddBook extends React.Component {
     constructor () {
         super ();
+        this.state = {
+            title: '',
+            category: '',
+            rating: 0,
+            writer_id: 0
+        }
         
         this.post_request = this.post_request.bind(this);
     }
 
-    state = {
-        title: '',
-        category: '',
-        rating: 0,
-        writer_id: 0
-    }
+    
 
     async post_request () {
-        fetch('http://localhost:3000/books', {
+        fetch('http://localhost:3000/books/', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',

@@ -3,13 +3,13 @@ import React from 'react'
 export class DelBook extends React.Component {
     constructor () {
         super ();
-        
+        this.state = {
+            book_id: ''
+        }
         this.idhandler = this.idhandler.bind(this)
 
     }
-    state = {
-        book_id: ''
-    }
+    
 
     async delete_book () {
         fetch('http://localhost:3000/books'+this.state.book_id, {method: 'DELETE'})
