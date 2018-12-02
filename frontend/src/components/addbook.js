@@ -15,7 +15,7 @@ export class AddBook extends React.Component {
     }
 
     async post_request () {
-        fetch('https://localhost:3000/books', {
+        fetch('http://localhost:3000/books', {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
