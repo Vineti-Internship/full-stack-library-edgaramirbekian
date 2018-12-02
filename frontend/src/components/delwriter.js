@@ -11,7 +11,7 @@ export class DelWriter extends React.Component {
     }
 
     async delete_writer () {
-        fetch('https://localhost:3000/writers'+this.state.writer_id, {method: 'DELETE'})
+        fetch('http://localhost:3000/writers/'+this.state.writer_id, {method: 'DELETE'})
     }
 
     idhandler (event) {
@@ -22,7 +22,7 @@ export class DelWriter extends React.Component {
         return (
             <form>
                 <label>
-                    Book ID:
+                    Writer ID:
                     <input type="text" name="writer_id" value={this.state.writer_id} onChange = {this.idhandler}/>
                 </label>
                 <input type="submit" value="Submit" onClick= {

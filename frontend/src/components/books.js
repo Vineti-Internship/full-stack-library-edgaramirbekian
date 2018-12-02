@@ -18,6 +18,8 @@ export class Books extends React.Component {
         
     }
 
+    
+
     // Function to render information from object data type in render method
     renderBookInfo(){
 		return Object.entries(this.state.books).map(([key, value], i) => {
@@ -30,6 +32,11 @@ export class Books extends React.Component {
                     Category: {value.category},
                     Writer ID: {value.writer_id}
                     </li>
+                    <button onClick={
+                        async () => {
+                        fetch('http://localhost:3000/books/'+value.id, {method: 'DELETE'})
+                        }
+                    }>Delete</button>
 				</ul>
 			)
 		})

@@ -31,6 +31,11 @@ export class Authors extends React.Component {
                         <Link to='/books'>Writer ID: {value.id} ,
                         Writer's Full Name: {value.first_name + ' ' + value.last_name},
                         </Link>
+                        <button onClick={
+                            async () => {
+                                fetch('http://localhost:3000/writers/'+value.id, {method: 'DELETE'})
+                            }
+                        }>Delete</button>
                     </li>
 				</ul>
 			)

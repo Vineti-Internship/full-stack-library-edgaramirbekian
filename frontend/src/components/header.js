@@ -6,7 +6,8 @@ export class Header extends React.PureComponent {
     render() {
         return (
             <div>
-                <h3>Library Demo</h3>
+                <h3><Link to='/'>Library Demo</Link> </h3><br/>
+                <Link to='/books'>Books</Link> <br/>
                 <Link to='/addwriter'>Add Author</Link> <br/>
                 <Link to='/addbook'>Add Book</Link> <br/>
                 <Link to='/delbook'>Delete Book</Link> <br/>
